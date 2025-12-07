@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio-data | My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Bio-data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <img src="assets/profile.jpg" class="profile">
+
+        <h2>Personal Information</h2>
+        <table>
+            <tr><td>Name</td><td>Varnitha</td></tr>
+            <tr><td>Date of Birth</td><td>DD/MM/YYYY</td></tr>
+            <tr><td>Gender</td><td>Female</td></tr>
+            <tr><td>Email</td><td>example@gmail.com</td></tr>
+            <tr><td>Phone</td><td>9876543210</td></tr>
+            <tr><td>Address</td><td>Your Address Here</td></tr>
+            <tr><td>Languages Known</td><td>English, Hindi, Kannada</td></tr>
+            <tr><td>Nationality</td><td>Indian</td></tr>
+        </table>
+    </section>
+
+    <footer>
+        © 2025 My Website
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume | My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Resume</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>Career Objective</h2>
+        <p>To secure a challenging position where I can contribute my skills and grow professionally.</p>
+
+        <h2>Educational Qualification</h2>
+        <ul>
+            <li>Bachelor of Computer Applications (BCA)</li>
+            <li>PUC – Science</li>
+            <li>SSLC</li>
+        </ul>
+
+<h2>Technical Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java</li>
+            <li>MS Office, SQL</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <p><strong>Project Name:</strong> Student Management System</p>
+        <p><strong>Description:</strong> A web-based application to maintain student records.</p>
+
+        <h2>Strengths</h2>
+        <ul>
+            <li>Good Communication</li>
+            <li>Teamwork</li>
+            <li>Quick Learner</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2025 My Website
+    </footer>
+
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.profile {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+table, td {
+    width: 100%;
+    border: 1px solid #999;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("header").style.opacity = 0;
+    setTimeout(() => {
+        document.querySelector("header").style.transition = "1s";
+        document.querySelector("header").style.opacity = 1;
+    }, 200);
+});
